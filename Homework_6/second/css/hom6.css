@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background: #363F3E;
+    border: 20px solid #fff;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h4 {
+    margin: 0;
+}
+
+.head {
+    color: #E88A7A;
+    text-align: center;
+    background: #454E4E;
+    padding: 15px 0;
+}
+
+.head span {
+    text-transform: uppercase;
+}
+
+.head h4 {
+    margin-top: 5px;
+}
+
+.main {
+    padding-top: 30px;
+    color: #fff;
+    padding-bottom: 275px;
+    
+}
+
+.main_item {
+    background: #848497;
+    width: 600px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    border-top:2px solid transparent;
+    border-bottom:2px solid transparent;
+}
+
+.main_item::after {
+    font-size: 14px;
+    vertical-align: middle;
+    opacity: .6;
+}
+
+.one::after {
+    content: "(for the next inssons about CSS)";
+}
+.two::after {
+    content: "(for more CSS manipulations)";
+}
+.three::after {
+    content: "(because they are awesome)";
+}
+.four::after {
+    content: "(hm...they always dissapear)";
+}
+.six::after {
+    content: "(for more CSS manipulations)";
+}
+
+.main_item:nth-child(even) {
+    background: #77778D;
+}
+
+.main_item:hover {
+    border-color: #fff;
+    background: #5E6171;
+}
+
+input:checked + label  {
+    text-decoration: line-through;
+}
+
+.main_item:active {
+    background: #ED8878;
+}
+
+button {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: #454E4E;
+    color: #E88A7A;
+    border: none;
+    margin-top: 30px;
+    font-size: 20px;
+}

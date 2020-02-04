@@ -1,0 +1,24 @@
+.date {
+    font-weight: bold;
+    border-radius: 10%;
+    background-color: rgba(38, 38, 38, .5); 
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin-left: 10px;
+    line-height: 1;
+
+    &__twenty {
+        font-size: 32px;  
+    }
+
+    &__nov {
+        text-transform: uppercase;
+        font-size: 21px;
+    }
+
+    &:hover {
+        transform: rotate(360deg);
+        transition: .6s;
+    }
+} 

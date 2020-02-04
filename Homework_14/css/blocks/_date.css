@@ -1,0 +1,21 @@
+.date {
+  font-weight: bold;
+  border-radius: 10%;
+  background-color: rgba(38, 38, 38, 0.5);
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin-left: 10px;
+  line-height: 1; }
+  .date__twenty {
+    font-size: 32px; }
+  .date__nov {
+    text-transform: uppercase;
+    font-size: 21px; }
+  .date:hover {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s; }

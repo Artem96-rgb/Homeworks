@@ -1,0 +1,118 @@
+.contact {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    text-align: center;
+    background: url(/img/nature.png) no-repeat;
+    background-size: cover;
+    
+     
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 44px;
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 16px 20px;
+        background: rgba(105, 211, 214, 0.5);
+        display: block;
+        outline: none;
+        border: none;
+        margin-bottom: 15px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    &__input:focus {
+        background: #00c4c4;
+        border-left: 5px solid #355b82;
+    }
+
+    &__label {
+        font-size: 15px;
+        font-weight: 300;
+        color: #fff;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+    }
+
+    &__textarea {
+        width: 100%;
+        background: rgba(105, 211, 214, 0.5);
+        outline: none;
+        border: none;
+        margin-bottom: 15px;
+        height: 250px;
+        padding: 16px 20px;    
+    }
+
+    &__textarea:focus {
+        background: #00c4c4;
+        border-left: 5px solid #355b82;
+    }
+
+    &__button {
+        background: rgba(105, 211, 214, 0.5);
+        width: 100%;
+        box-shadow: none;
+        border: none;
+    }
+
+    &__wrap {
+        text-align: left;
+        margin-bottom: 15px;
+        line-height: 1.471;
+        margin-top: -7px;
+    }
+
+    &__subtitle {
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 3px;
+    }
+
+    &__data {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    @media screen and(max-width :575px) {
+        & {
+            padding-bottom: 80px;
+        }
+        
+        &__title {
+            font-size: 50px;
+        }   
+    }
+}
+
+
+::-webkit-input-placeholder {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+
+textarea::-webkit-input-placeholder {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

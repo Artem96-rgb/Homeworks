@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: "HansKendrick", sans-serif;
+    background-color: #e2e7ec;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "HansKendrick", sans-serif;
+    src: url(../font/hanskendrick-regular-webfont.woff) format(woff);
+    src: url(../font/hanskendrick-regular-webfont.woff2) format(woff2);
+}
+
+.red_car {
+    background: url(../img/redcar.jpg);
+    width: 740px;
+    height: 540px;
+}

@@ -1,0 +1,118 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,h2,h3 {
+    margin: 0;
+}
+
+
+
+
+
+
+.container {
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 0 30px; 
+}
+
+.main__top {
+    max-width: 1040px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+    position: relative;
+}
+
+.main__top::before {
+    display: block;
+    content: url(/Homework_32/img/triangle.png);
+    position: absolute;
+    top: 68%;
+    left: -2%;
+    width: 44px;
+    height: 44px;
+}
+
+.main__top::after {
+    display: block;
+    content: url(/Homework_32/img/plus.png);
+    position: absolute;
+    top: 10%;
+    right: 14%;
+    width: 30px;
+    height: 30px;
+}
+
+.main__work {
+    font-size: 18px;
+    margin-bottom: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;;
+}
+
+.main__title {
+    font-size: 86px;
+    line-height: 1;
+}
+
+@media screen and (max-width:991px) {
+    .main__title  {
+        font-size: 50px;
+    }
+}
+
+.content {
+    position: relative;
+    margin-top: 50px;
+}
+
+
+.slider__item {
+    margin: 0 30px;
+}
+
+
+.slider__col img {
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+}
+  
+
+
+.slider-angle__left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.slider-angle__right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.slider-angle__btn {
+    display: block;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    outline: none;
+    border: none;
+}
+
+.slider-angle__btn i {
+    font-size: 30px;
+    
+}

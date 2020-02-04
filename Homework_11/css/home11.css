@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p,h2,h3,h4 {
+    margin: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.header {
+    padding-top: 52px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__link {
+    color: #262626;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 30px;
+    padding: 5px 0;
+    border-top: 2px solid transparent;
+}
+
+.nav__link:hover {
+    border-color: #ff6033;
+}
+
+.row {
+    align-items: center;
+}
+
+.fresh {
+    padding-top: 348px;
+    padding-bottom: 400px;
+    color: #262626;
+    position: relative;
+    background: url(../img/bg.jpg) no-repeat; 
+    background-size: cover; 
+}
+
+.fresh__suptitle {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.fresh__text {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.fresh__button {
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    padding: 15px 0;
+    background: #ff6033;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 29px;
+    text-align: center;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.scroll {
+   position: absolute;
+   bottom: 61px;
+   left: 49%;
+}
+
+.about {
+    color: #fff;
+    background: #00b2b2;
+    padding-top: 51px;
+    padding-bottom: 60px;
+}
+
+.picture__contain {
+    max-width: 100%;
+}
+
+.fresh__title {
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 22px;;
+}
+
+.fresh__text--margin {
+    margin-bottom: 20px;
+}
+
+.services {
+    background: url(../img/tomatos.png) no-repeat, #70bfff;
+    background-position: 77% 37%;
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 140px;
+    color: #fff;
+}
+
+.service__item {
+    width: 400px;
+    min-height: 100px;
+    background: #fff;
+    margin-bottom: 18px;
+    position: relative;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+} 
+
+.service__item:hover {
+    background: #262626;
+}
+
+.service__item:hover .service__link {
+    color: #fff;
+}
+
+.service__item:hover .cls-1 {
+    fill: #fff;
+}
+
+.service__content {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #9d9d9d;
+}
+
+.service__link {
+    color: #262626;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;  
+}
+
+.service__icon {
+    position: absolute;
+    right: 23px;
+    top: 27px;
+}
+
+.service__text {
+    position: absolute;
+    top: -105px;
+    right: 13px;
+}
+
+.gallery {
+    color: #262626;
+    text-align: center;
+    background: #ffe92f; 
+    padding-top: 80px;
+    padding-bottom: 115px;
+}
+
+.shadow {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.gallery__picture {
+    padding: 15px 0;
+}
+
+.gallery__button {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fresh__button--gallery {
+    background: #5585a2;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.subscribe {
+    padding-top: 138px;
+    padding-bottom: 150px;
+    color: #262626;
+    background: url(../img/bggrape.png) no-repeat;
+    background-size: cover;
+}
+
+.subscribe__subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.subscribe__input {
+    width: 100%;
+    padding: 20px 15px;
+    border: 1px solid #262626;
+    margin-top: 27px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 15px;
+    font-weight: 300;
+    color: #262626;
+}
+
+.fresh__button--subscribe {
+    background: #96b92c;
+    width: 170px;
+    margin-top: 22px;
+}
+
+.blog {
+    background: #b07cf7;
+    padding-top: 81px;
+    padding-bottom: 115px;
+    color: #fff;
+    text-align: center; 
+}
+
+.fresh__text--blog {
+    margin-bottom: 40px;
+}
+
+.blog__item {
+    position: relative;
+}
+
+.blog__contain {
+    display: block;
+}
+
+.item_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 0 20px 20px;
+}
+
+.date {
+    font-weight: bold;
+    border-radius: 10%;
+    background-color: rgb(38, 38, 38, .5); 
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin-left: 10px;
+    line-height: 1;
+}
+.date:hover {
+    transform: rotate(360deg);
+    transition: 3s;
+}
+
+.twenty {
+    font-size: 32px;  
+}
+
+.nov {
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+.item_text {
+    text-align: left;
+}
+
+.blog__subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.blog__text {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.blog__btn {
+    padding-top: 21px;
+    margin: 0 auto;
+}
+
+.fresh__button--blog {
+    background: #f72b3b;
+}

@@ -1,0 +1,66 @@
+.burger {
+
+    &__label {
+        position: absolute;
+        top: 28px;
+        right: 0;
+        z-index: 2;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    &__item {
+        display: none;
+        width: 42px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        top: 27px;
+        right: 0;
+
+        &--second, &--third {
+            top: 36px;
+        }
+
+        &--fourth {
+            top: 45px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        &__item {
+            display: block;
+        }
+        
+    }
+}
+
+
+    @media screen and (max-width: 991px) {
+        #burger:checked ~ .nav {
+            font-size: 16px;
+            max-height: 200px;
+        } 
+
+        #burger:checked ~ .burger__item--first {
+            display: none;
+        }
+        
+        #burger:checked ~ .burger__item--second {
+            transform: rotate(45deg);
+        }
+        
+        #burger:checked ~ .burger__item--third {
+            transform: rotate(-45deg);
+        }
+        
+        #burger:checked ~ .burger__item--fourth {
+            display: none;
+        }
+    }
+
+    #burger {
+        display: none;
+    }
+
+

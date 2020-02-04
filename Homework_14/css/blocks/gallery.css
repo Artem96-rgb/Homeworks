@@ -1,0 +1,9 @@
+.gallery {
+  color: #262626;
+  text-align: center;
+  background: #ffe92f;
+  padding-top: 80px;
+  padding-bottom: 115px; }
+
+.gallery__picture {
+  padding: 15px 0; }

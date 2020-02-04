@@ -1,0 +1,43 @@
+.gallery {
+    color: #262626;
+    text-align: center;
+    background: #ffe92f; 
+    padding-top: 80px;
+    padding-bottom: 115px;
+    
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 48px;
+    }
+
+    &__picture {
+        margin-bottom: 29px;
+    }
+
+    &__button {
+        margin: 0 auto;
+        background: #5585a2;
+        margin-top: 18px;
+    }
+    &__button:hover {
+        background: darken(#5585a2, 10%);
+    }
+
+    @media screen and(max-width :575px) {
+        & {
+            padding-bottom: 80px;
+        }
+
+        &__title {
+            font-size: 50px;
+        }   
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.footer {
+    padding-top: 29px;
+    padding-bottom: 30px;
+    background: #262626;
+    color: #b9b9b9;
+    font-size: 16px;
+    font-weight: 300;
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+    }
+
+    &__text {
+        font-size: 15px;
+    }
+
+    &__special {
+        color: #ff2b58;
+    }
+
+    &__logo {
+        box-shadow: none;
+    }
+ 
+    @media screen and (max-width: 767px) {
+        &__content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__logo {
+            order: 1;
+        }
+
+        &__text {
+            order: 2;
+            margin: 5px 0;
+        }
+
+        &__copyright {
+            order: 3;
+        }
+    }   
+}

@@ -1,0 +1,64 @@
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #262626;
+}
+
+h2,h3,h4,h5,p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #262626;
+}
+
+.text {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.588;
+}
+
+.btn {
+   color: #fff;
+   padding: 16px 0;
+   text-align: center;
+   width: 200px;
+   font-size: 20px;
+   font-weight: 300;
+   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+   text-transform: uppercase;
+}
+
+.title {
+    font-size: 90px;
+    font-weight: 700;
+}
+
+
+
+img {
+    max-width: 100%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+input, textarea {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+@import 'blocks/header';
+@import 'blocks/burger';
+@import 'blocks/nav';
+@import 'blocks/main';
+@import 'blocks/about';
+@import 'blocks/service';
+@import 'blocks/gallery';
+@import 'blocks/subscribe';
+@import 'blocks/blog';
+@import 'blocks/date';
+@import 'blocks/contact';
+@import 'blocks/footer';

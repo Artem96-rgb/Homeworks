@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: "MuseoSansW01-Rounded100";
+    color: #e1e1e1;
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2,h3 {
+    margin: 0;
+}
+
+input {
+    display: block;
+}
+
+.nike {
+    background: url(/homework_two/img/background.jpg) no-repeat;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nike__card {
+    background-color: #111a28;
+    padding: 20px 50px 20px 20px;
+    border-radius: 10px;
+    
+}
+
+.nike__content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nike-product {
+    padding-top: 45px;
+}
+
+.nike-product__bullets {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.nike-description {
+    max-width: 195px;
+    margin-left: 50px;
+}
+
+.nike-description__title {
+    font-size: 24px;
+    line-height: 1.083;
+    margin-bottom: 14px;
+}
+
+.nike-description__subtitle {
+    color: rgba(225, 225, 225, 0.541);
+    margin-bottom: 25px;
+}
+
+.nike-description__select {
+    width: 70px;
+    height: 30px;
+    background-color: #111a28;
+    color: #e1e1e1;
+    margin-top: 25px;
+}
+
+.nike-description__btn {
+    width: 100%;
+    background-color: #202835;
+    border: 1px solid #4f5560;
+    outline: none;
+    color: #e1e1e1;
+    margin-top: 30px;
+    padding: 10px 0;
+    font-family: "MuseoSansW01-Rounded100";
+} 
+

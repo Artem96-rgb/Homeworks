@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: "HansKendrick", sans-serif;
+    text-transform: uppercase;
+    background-color: #e2e7ec;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,h2,h3,p {
+    margin: 0;
+}
+ 
+@font-face {
+    font-family: "HansKendrick", sans-serif;
+    src: url(../font/hanskendrick-regular-webfont.woff) format(woff);
+    src: url(../font/hanskendrick-regular-webfont.woff2) format(woff2);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px 20px;
+}
+
+.main__item {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.main__item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    
+}
+
+.main__information--pos {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 2;
+    max-width: 435px;
+}
+
+.main__text {
+    color: rgba(129, 129, 129, 0.502);
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.main__title {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.main__box {
+    background: #fff;
+    max-width: 360px;
+}
+
+.main__content {
+    padding: 22px;
+}
+
+
+.main__subtitle {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 65px;
+    line-height: 30px;
+}
+
+
+  

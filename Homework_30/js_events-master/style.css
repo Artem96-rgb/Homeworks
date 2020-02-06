@@ -1,0 +1,55 @@
+.desk {
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+    padding: 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#resizable {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 5px solid grey;
+    padding: 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.resizer {
+    width: 10px; 
+    height: 10px; 
+    background: blue; 
+    position:absolute; 
+    right: 0; 
+    bottom: 0; 
+    cursor: se-resize; 
+}
+
+#div {
+    background-color: #8FD6BD;
+}
+
+#textarea {
+    border: 10px solid #BC204B;
+    font-style: italic;
+    background-color: #8FD6BD;
+}
+
+#salary:hover {
+    color : #BC204B;
+    cursor: pointer;
+}
+
+#name:hover {
+    color : #BC204B;
+    cursor: pointer;
+}
+
+#position:hover {
+    color : #BC204B;
+    cursor: pointer;
+}

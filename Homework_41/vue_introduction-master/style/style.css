@@ -1,0 +1,57 @@
+#app-one {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
+    border: solid 2px #000;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+h1 {
+    background-color: #fff;
+    padding: 15px;
+}
+
+#examples {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 600px;
+    height: 50px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+::-webkit-input-placeholder  {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#desk {
+    font-size: 30px;
+}

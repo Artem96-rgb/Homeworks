@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>vue_events</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <a id="nav" href="./task-two.html">Go to next task <i class="fas fa-arrow-right"></i></a>
+        <h1 class="app__title">colorful text</h1>
+        <h2 class="app__subtitle">Enter some text</h2>
+        <textarea class="app__textarea" name="textarea" cols="30" rows="10" v-model="message"></textarea>
+        <p class="app__paragraph">Choose a color</p>
+        <select class="app__select" v-model="color" name="" id="">
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="yellow">yellow</option>
+            <option value="aquamarine">aquamarine</option>
+            <option value="tomato">tomato</option>
+        </select>
+        <br>
+        <input class="app__submit" type="submit" value="Print it" @click="submitText">
+        <div class="app__paragraph" id="desk" v-bind:style="{color: this.color}"></div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f811e9d5c2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: '',
+                color: ''
+            },
+            methods: {
+                submitText: function () {
+                    document.getElementById("desk").innerText = this.message
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

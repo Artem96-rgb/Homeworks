@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/task-two.css">
+    <title>task two</title>
+</head>
+
+<body>
+    <a id="nav" href="./index.html"><i class="fas fa-arrow-left"></i> Go to previous task</a>
+    <div id="app">
+        <ul id="desk">
+            <h1 class="app__title">Youtube channels that I recommend:</h1>
+            <ul class="app__list">
+                <li class="app__list-item" v-for="(channel, index) in channels">
+                    {{ index + 1 }}
+                    <a class="app__list-link" v-bind:href="channel.link" v-bind:title="channel.description"
+                        target="_blank">{{channel.name}}</a>
+                </li>
+
+            </ul>
+        </ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f811e9d5c2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        // 2. Создайте в шаблоне массив объектов, содержащий название, подсказку и ссылку. Необходимо создать список ссылок, где вначале будет определяться номер ссылки, название. При нажатии – переходит по ссылке. При наведении – появляется всплывающая подсказка.
+        var app = new Vue({
+            el: '#app',
+            data: {
+                channels: [
+                    {
+                        name: "Travesty Media",
+                        link: "https://www.youtube.com/user/TechGuyWeb/",
+                        description: "Traversy Media features the best online web development and programming tutorials for all of the latest web technologies including Node.js, Angular 2, React.js, PHP, Rails, HTML, CSS and much more"
+                    },
+                    {
+                        name: "The Coding Train",
+                        link: "https://www.youtube.com/user/shiffman",
+                        description: "In this YouTube channel I publish `creative coding` video tutorials every week. Subjects covered range from the basics of programming languages like JavaScript (with p5.js) and Java (with Processing) to generative algorithms like physics simulation, computer vision, and data visualization."
+                    },
+                    {
+                        name: "DesignCourse",
+                        link: "https://www.youtube.com/user/DesignCourse",
+                        description: "Hi, I'm Gary. I've created close to 100 courses from graphic design to advanced frontend development. I've worked with Envato Network's TutsPlus.com, DigitalTutors.com, Pluralsight.com, LinkedIn Learning & Lynda.com."
+                    },
+                    {
+                        name: "freeCodeCamp.org",
+                        link: "https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ",
+                        description: "We're an open source community of busy people who learn to code and build projects for nonprofits."
+                    },
+                    {
+                        name: "Web Dev Simplified",
+                        link: "https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw/",
+                        description: "Web Dev Simplified is all about teaching web development skills and techniques in an efficient and practical manner."
+                    }
+                ],
+
+            }
+        })
+    </script>
+</body>
+
+</html>

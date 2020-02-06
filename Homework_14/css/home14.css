@@ -34,15 +34,18 @@ a {
 img {
   max-width: 100%;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  display: block; }
 
 input, textarea {
   font-family: 'Raleway', sans-serif; }
 
 .header {
-  margin-top: 50px;
+  padding-top: 50px;
   padding-bottom: 65px;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 1; }
   .header__logo {
@@ -81,11 +84,11 @@ input, textarea {
   .burger__item--fourth {
     top: 45px; }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .burger__item {
     display: block; } }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   #burger:checked ~ .nav {
     font-size: 16px;
     max-height: 200px; }
@@ -123,7 +126,7 @@ input, textarea {
     text-transform: uppercase; }
     .nav__link:hover {
       border-color: #ff6033; }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 767px) {
     .nav {
       width: 100%;
       position: absolute;
@@ -159,7 +162,12 @@ input, textarea {
     position: absolute;
     left: 49%;
     bottom: 7%; }
+  @media screen and (max-width: 767px) {
+    .main {
+      padding-bottom: 200px; } }
   @media screen and (max-width: 575px) {
+    .main {
+      padding-bottom: 100px; }
     .main__title {
       font-size: 45px; }
     .main__text {
@@ -180,8 +188,12 @@ input, textarea {
     background-image: none; } }
 
 @media screen and (max-width: 575px) {
+  .about {
+    padding-top: 80px;
+    padding-bottom: 80px; }
   .about__title {
-    font-size: 75px; } }
+    font-size: 65px;
+    margin-bottom: 20px; } }
 
 .service {
   background: url(../img/tomatos.png) no-repeat #70bfff;
@@ -260,16 +272,33 @@ input, textarea {
   padding-bottom: 115px; }
   .gallery__title {
     margin-bottom: 20px; }
-  .gallery__text {
-    margin-bottom: 48px; }
-  .gallery__picture {
-    margin-bottom: 29px; }
+  .gallery__content {
+    margin-top: 50px; }
+  .gallery__item {
+    padding-bottom: 20px; }
+    .gallery__item--flex {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
   .gallery__button {
     margin: 0 auto;
     background: #5585a2;
     margin-top: 18px; }
   .gallery__button:hover {
     background: #436a81; }
+  @media screen and (max-width: 991px) {
+    .gallery img {
+      width: 100%; }
+    .gallery__item--flex:first-child {
+      margin-bottom: 20px; } }
   @media screen and (max-width: 575px) {
     .gallery {
       padding-bottom: 80px; }
@@ -289,23 +318,17 @@ input, textarea {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 16px; }
-  .subscribe__form {
-    position: relative; }
   .subscribe__input {
     width: 100%;
     padding: 20px 15px;
     border: 1px solid #262626;
     margin-top: 27px; }
-  .subscribe__label {
-    font-size: 15px;
-    font-weight: 300;
-    position: absolute;
-    top: 48px;
-    left: 14px; }
   .subscribe__button {
     background: #96b92c;
     width: 170px;
-    margin-top: 26px; }
+    margin-top: 26px;
+    outline: none;
+    border: none; }
   .subscribe__button:hover {
     background: #759022; }
   @media screen and (max-width: 575px) {
@@ -315,6 +338,10 @@ input, textarea {
       background-image: none; }
     .subscribe__text {
       font-size: 14px; } }
+  .subscribe ::-webkit-input-placeholder {
+    font-size: 15px;
+    font-weight: 300;
+    color: #000; }
 
 .blog {
   background: #b07cf7;
@@ -411,8 +438,6 @@ input, textarea {
     margin-bottom: 20px; }
   .contact__text {
     margin-bottom: 44px; }
-  .contact__form {
-    position: relative; }
   .contact__input {
     width: 100%;
     padding: 16px 20px;
@@ -427,13 +452,6 @@ input, textarea {
     .contact__input:focus {
       background: #00c4c4;
       border-left: 5px solid #355b82; }
-  .contact__label {
-    font-size: 15px;
-    font-weight: 300;
-    color: #fff;
-    position: absolute;
-    top: 17px;
-    left: 20px; }
   .contact__textarea {
     width: 100%;
     background: rgba(105, 211, 214, 0.5);
@@ -469,6 +487,14 @@ input, textarea {
       padding-bottom: 80px; }
     .contact__title {
       font-size: 50px; } }
+  .contact ::-webkit-input-placeholder {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff; }
+  .contact textarea::-webkit-input-placeholder {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff; }
 
 .footer {
   padding-top: 29px;

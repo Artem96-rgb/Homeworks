@@ -1,9 +1,12 @@
 .header {
-    margin-top: 50px;
+    padding-top: 50px;
     padding-bottom: 65px;
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 1;
+    
 
     &__logo {
         box-shadow: none;

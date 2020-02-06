@@ -13,10 +13,6 @@
         margin-bottom: 44px;
     }
 
-    &__form {
-        position: relative;
-    }
-
     &__input {
         width: 100%;
         padding: 16px 20px;
@@ -34,15 +30,6 @@
             border-left: 5px solid #355b82;
         }
 
-    }
-
-    &__label {
-        font-size: 15px;
-        font-weight: 300;
-        color: #fff;
-        position: absolute;
-        top: 17px;
-        left: 20px;
     }
 
     &__textarea {
@@ -95,27 +82,19 @@
             font-size: 50px;
         }   
     }
+
+    ::-webkit-input-placeholder {
+        font-size: 15px;
+        font-weight: 300;
+        color: #fff;   
+    }
+    
+    textarea::-webkit-input-placeholder {
+        font-size: 15px;
+        font-weight: 300;
+        color: #fff;
+    }
 }
 
 
-// ::-webkit-input-placeholder {
-//     font-size: 15px;
-//     font-weight: 300;
-//     color: #fff;
-// }
 
-// textarea::-webkit-input-placeholder {
-//     font-size: 15px;
-//     font-weight: 300;
-//     color: #fff;
-// }
-
-// ::-webkit-outer-spin-button,
-// ::-webkit-inner-spin-button {
-//   -webkit-appearance: none;
-//   margin: 0;
-// }
-
-// :focus::-webkit-input-placeholder {
-//     opacity: 0;
-// }

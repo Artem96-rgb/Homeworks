@@ -7,15 +7,10 @@
     background-position: center top;
     
 
-
     &__title {
         font-size: 40px;
         font-weight: 700;
         margin-bottom: 16px;
-    }
-
-    &__form {
-        position: relative;
     }
 
     &__input {
@@ -25,18 +20,12 @@
         margin-top: 27px;
     }
 
-    &__label {
-        font-size: 15px;
-        font-weight: 300;
-        position: absolute;
-        top: 48px;
-        left: 14px;
-    }
-
     &__button {
         background: #96b92c;
         width: 170px;
         margin-top: 26px;
+        outline: none;
+        border: none;
     }
 
     &__button:hover {
@@ -56,4 +45,11 @@
 
         
     }
+
+    ::-webkit-input-placeholder {
+        font-size: 15px;
+        font-weight: 300;
+        color: #000;   
+    }
 }
+

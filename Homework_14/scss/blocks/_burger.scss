@@ -27,7 +27,7 @@
         }
     }
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 767px) {
         &__item {
             display: block;
         }
@@ -36,7 +36,7 @@
 }
 
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 767px) {
         #burger:checked ~ .nav {
             font-size: 16px;
             max-height: 200px;

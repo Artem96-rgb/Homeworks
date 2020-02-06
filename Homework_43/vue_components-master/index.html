@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue_components</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>Enter a number and change it</h1>
+        <counter></counter>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        // Создайте компонент, который будет выполнять следующее поведение: в шаблоне – должны быть две кнопки с функциями инкремента и декремента, параграф и поле ввода. Пользователь в текстовое поле вводит число, после потери фокуса данного поля это число моментально появляется ниже в значении параграфа. Значение поля очищается. При нажатии на данные кнопки число, находящееся в параграфе, должно добавлять единицу или вычитать. 
+        let component = {
+            data: function () {
+                return {
+                    count: 0,
+                    submitted: { count: "" }
+                }
+            },
+            methods: {
+                submit: function () {
+                    this.submitted.count = this.count
+                    this.count = ""
+                }
+            },
+            template: '<div> <input type="text" v-model.lazy.number="count" @blur ="submit"><div class="button_panel"><button v-on:click="submitted.count--">Subtract 1</button><p> {{ submitted.count }}</p><button v-on:click="submitted.count++">Add 1</button></div></div>'
+        }
+        var app = new Vue({
+            el: '#app',
+            data: {
+            },
+            components: {
+                'counter': component
+            }
+        })
+
+    </script>
+</body>
+
+
+</html>

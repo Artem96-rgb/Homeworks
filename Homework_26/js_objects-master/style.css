@@ -1,0 +1,13 @@
+img {
+    width: 500px;
+}
+
+button {
+    width: 200px;
+    height: 100px;
+}
+
+.text {
+    font-size : 20px;
+    font-weight: 600;
+}
